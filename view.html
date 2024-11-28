@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Projetos do Interact</title>
+    <link rel="stylesheet" href="telinha.css">
+        
+</head>
+<body>
+
+    <div id="formulario">
+        <h1>Cadastro de Projetos do Interact</h1>
+     <div id="divAviso"></div>
+    <div>
+        <label for="id">ID:</label>
+        <input type="text" id="id" placeholder="Digite aqui um ID válido">
+    </div>
+    
+    <div>
+        <label for="nome">Nome do Projeto:</label>
+        <input type="text" id="nome">
+    </div>
+    
+    <div>
+        <label for="area">Área de Atuação:</label>
+        <input type="text" id="area">
+    </div>
+    
+    <div>
+        <label for="presidente">Presidente:</label>
+        <input type="text" id="presidente">
+    </div>
+    
+    <div>
+        <label for="dataRealizacao">Data de Realização:</label>
+        <input type="date" id="dataRealizacao">
+    </div>
+    
+    <div>
+        <label for="anoRotario">Ano Rotário:</label>
+        <input type="text" id="anoRotario">
+    </div>
+
+    <div>
+        <label for="local">Local:</label>
+        <input type="text" id="local">
+    </div>
+    
+    <div>
+        <button class="botao botao-procurar" id="btProcure" onclick="procure()">Procurar</button>
+        <button class="botao botao-acao" id="btInserir" onclick="inserir()">Inserir</button>
+        <button class="botao botao-acao" id="btAlterar" onclick="alterar()">Alterar</button>
+        <button class="botao botao-excluir" id="btExcluir" onclick="excluir()">Excluir</button>
+        <button class="botao botao-salvar" id="btSalvar" onclick="salvar()">Salvar</button>
+        <button class="botao botao-cancelar" id="btCancelar" onclick="cancelarOperacao()">Cancelar</button>
+    </div>
+    <br><br>
+        <button class="botao botao-dados" id="btDadosSalvar"  onclick="salvarNoComputador()">Salvar Dados Permanentes</button>
+        <button class="botao botao-buscar"id="btBuscarDados" onclick="buscarDadosSalvosNoComputador()">Buscar Dados Salvos</button>
+
+    </div>
+
+    
+        
+    
+   
+  
+  <div id="lista">
+    <h3>Projetos Cadastrados</h3>
+    <div id="output"></div>
+  </div>
+
+  <footer class="logoIC">
+    <img src="logoDistritalAzul.png" alt="logo" class="footer-logo">
+</footer>
+
+    <script src="controller.js"></script> 
+    <script src="classe.js"></script>
+
+</body>
+</html>
